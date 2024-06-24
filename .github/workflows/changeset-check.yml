@@ -9,6 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Comment on PR
-        uses: changesets/check-action@master
+        uses: changesets/check-action@noviny/use-get-release-plan
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
