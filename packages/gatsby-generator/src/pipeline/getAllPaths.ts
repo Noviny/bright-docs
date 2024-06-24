@@ -13,6 +13,7 @@ const getPathData = async (configPath?: string) => {
     `./un-src/components/page-templates`,
   );
   const pagesPath = path.resolve(pkgRoot, `./pages`);
+  const defaultPagesPath = path.join(pkgRoot, 'default-pages');
 
   return {
     rootPath: cwd,
@@ -20,6 +21,7 @@ const getPathData = async (configPath?: string) => {
     pagesPath,
     pkgRoot,
     config,
+    defaultPagesPath,
   };
 };
 export default getPathData;

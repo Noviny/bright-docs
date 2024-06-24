@@ -1,25 +1,34 @@
-import scanMetadata from './stages/scan-metadata';
-import generateWebsiteInfo from './stages/generate-website-info';
-import generatePages from './stages/generate-pages';
+import {
+  scanMetadataStage,
+  generateWebsiteInfoStage,
+  generatePagesStage,
+} from '@brisk-docs/pipeline-stages';
+
 import allPaths from './getAllPaths';
 
 const buildPipeline = async (configPath?: string) => {
-  const { rootPath, wrappersPath, pagesPath, pkgRoot, config } = await allPaths(
-    configPath,
-  );
+  const {
+    rootPath,
+    wrappersPath,
+    pagesPath,
+    pkgRoot,
+    config,
+    defaultPagesPath,
+  } = await allPaths(configPath);
 
-  return scanMetadata({
+  return scanMetadataStage({
     rootPath,
     packagePathPatterns: config.packagesPaths,
     customPackageFields: config.customPackageFields,
     docs: config.docs,
     showSubExamples: config.showSubExamples,
   })
-    .then(projectData => generateWebsiteInfo(projectData))
+    .then(projectData => generateWebsiteInfoStage(projectData))
     .then(websiteInfo =>
-      generatePages({
+      generatePagesStage({
         wrappersPath,
         pagesPath,
+        defaultPagesPath,
         packageRoot: pkgRoot,
         ...websiteInfo,
         ...config,

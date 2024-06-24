@@ -26,6 +26,8 @@ export type StageInput = {
   pagesPath: string;
   // The absolute path to the root of the package.
   packageRoot: string;
+  // The absolute path to the directory containing default pages
+  defaultPagesPath: string;
 } & WebsiteInfoSpec &
   BriskConfiguration;
 
@@ -47,9 +49,9 @@ const generateGenericPage = (
 export default createStage(
   'generate-pages',
   async (input: StageInput): Promise<StageOutput> => {
-    const { pagesPath, wrappersPath } = input;
+    const { pagesPath, wrappersPath, defaultPagesPath } = input;
     await cleanPages(pagesPath);
-    await addBasePages(input.packageRoot, pagesPath);
+    await addBasePages(defaultPagesPath, pagesPath);
 
     const generatorConfig = { pagesPath, wrappersPath };
 

@@ -19,6 +19,7 @@ jest.mock('./page-writers', () => ({
 const inputBase = {
   wrappersPath: 'WRAPPERS_PATH',
   pagesPath: 'PAGES_PATH',
+  defaultPagesPath: 'DEFAULT_PAGES_PATH',
   pages: {
     packageDocPages: [],
     projectDocPages: [],

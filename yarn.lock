@@ -11629,7 +11629,7 @@ jest-environment-node@^24.0.0:
 jest-fixtures@^0.6.0:
   version "0.6.0"
   resolved "https://packages.atlassian.com/api/npm/npm-remote/jest-fixtures/-/jest-fixtures-0.6.0.tgz#7a58475aa7f404d84c9b72d324ed0b285ba6f3ae"
-  integrity sha512-ugqOq1HnJYgFGfmK8cc2jQbjcw4g00KqJNZfajTRZlYjnRschnmYuMrsb20aG74pg8R+zh6q72P3yPG7SnPMfA==
+  integrity sha1-elhHWqf0BNhMm3LTJO0LKFum864=
   dependencies:
     find-up "^2.1.0"
     fs-extra "^4.0.2"
@@ -13204,9 +13204,9 @@ mkdirp@0.5.1, mkdirp@0.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.1:
     minimist "0.0.8"
 
 mock-fs@^4.10.1:
-  version "4.10.1"
-  resolved "https://registry.yarnpkg.com/mock-fs/-/mock-fs-4.10.1.tgz#50a07a20114a6cdb119f35762f61f46266a1e323"
-  integrity sha512-w22rOL5ZYu6HbUehB5deurghGM0hS/xBVyHMGKOuQctkk93J9z9VEOhDsiWrXOprVNQpP9uzGKdl8v9mFspKuw==
+  version "4.10.4"
+  resolved "https://packages.atlassian.com/api/npm/npm-remote/mock-fs/-/mock-fs-4.10.4.tgz#4eaa3d6f7da2f44e1f3dd6b462cbbcb7b082e3d4"
+  integrity sha1-Tqo9b32i9E4fPda0Ysu8t7CC49Q=
 
 moment@2.22.2:
   version "2.22.2"
@@ -13952,7 +13952,7 @@ outdent@^0.5.0:
 outdent@^0.7.0:
   version "0.7.0"
   resolved "https://packages.atlassian.com/api/npm/npm-remote/outdent/-/outdent-0.7.0.tgz#cfd1f1956305141e0cf3e898ada6547373c1997a"
-  integrity sha512-Ue462G+UIFoyQmOzapGIKWS3d/9NHeD/018WGEDZIhN2/VaQpVXbofMcZX0socv1fw4/tmEn7Vd3McOdPZfKzQ==
+  integrity sha1-z9HxlWMFFB4M8+iYraZUc3PBmXo=
 
 output-file-sync@^2.0.0:
   version "2.0.1"

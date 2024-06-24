@@ -35,7 +35,6 @@
   },
   "files": [
     "static",
-    "default-pages",
     "babel.config.js",
     "gatsby-node.js",
     "gatsby-config.js",
@@ -66,6 +65,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/runtime": "^7.4.3",
     "@brisk-docs/file-viewer": "^0.2.5",
+    "@brisk-docs/pipeline-stages": "^0.1.0",
     "@brisk-docs/react-changelogs": "^0.1.11",
     "@emotion/core": "^10.0.9",
     "@emotion/styled": "^10.0.9",

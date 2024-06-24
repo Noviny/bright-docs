@@ -1,4 +1,4 @@
-import { TemplateSpecifier } from '../../../../../../types';
+import { TemplateSpecifier } from '../../../types';
 
 const outdent = require('outdent');
 

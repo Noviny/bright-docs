@@ -24,6 +24,8 @@ scratchings.js
 /packages/gatsby-generator/static/favicon.ico
 /packages/gatsby-generator/typings
 
+/packages/pipeline-stages/data
+
 /packages/**/bundles
 /packages/gatsby-generator/public
 /packages/**/**/yarn.lock

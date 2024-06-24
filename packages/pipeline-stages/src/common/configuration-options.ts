@@ -1,4 +1,4 @@
-import { TemplateSpecifier } from '../../../../types';
+import { TemplateSpecifier } from '../types';
 
 export interface ProjectDocsConfig {
   // absolute path to the docs in the filesystem

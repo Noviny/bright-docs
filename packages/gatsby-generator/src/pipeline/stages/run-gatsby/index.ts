@@ -1,4 +1,4 @@
-import createStage from '../make-pipeline-stage';
+import { makePipelineStage } from '@brisk-docs/pipeline-stages';
 
 // @ts-ignore: Importing non-ts file with no definition
 import createGatsbyServer from './gatsby-server';
@@ -14,7 +14,7 @@ interface StageInput {
 // Boilerplate, uncomment when used
 // interface StageConfig {}
 
-export default createStage(
+export default makePipelineStage(
   'run-gatsby',
   async (input: StageInput): Promise<void> => createGatsbyServer(input),
 );

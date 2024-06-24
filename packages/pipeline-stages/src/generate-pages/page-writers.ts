@@ -10,7 +10,7 @@ import {
   singleComponentTemplate,
   wrappedComponentTemplate,
 } from './templates';
-import { TemplateSpecifier } from '../../../../types';
+import { TemplateSpecifier } from '../types';
 
 export type StageInput = {
   // Absolute path to directory containing page wrapper components
@@ -281,11 +281,13 @@ export const cleanPages = async (pagesPath: string) => {
 
 /**
  * Adds the default pages into the pages directory
- * @param packageRoot root path of packages
+ * @param defaultPagesPath absolure path to where the default pages are located
  * @param pagesPath the pages directory path
  */
-export const addBasePages = async (packageRoot: string, pagesPath: string) => {
-  const defaultPagesPath = path.join(packageRoot, 'default-pages');
+export const addBasePages = async (
+  defaultPagesPath: string,
+  pagesPath: string,
+) => {
   await fs.copy(defaultPagesPath, pagesPath);
 };
 

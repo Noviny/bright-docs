@@ -37,7 +37,8 @@
     "packages": [
       "packages/file-viewer",
       "packages/react-changelogs",
-      "packages/gatsby-generator"
+      "packages/gatsby-generator",
+      "packages/pipeline-stages"
     ]
   },
   "dependencies": {

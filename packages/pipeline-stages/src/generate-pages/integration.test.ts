@@ -1,4 +1,4 @@
-import { createTempDir } from 'jest-fixtures';
+import { createTempDir, copyFixtureIntoTempDir } from 'jest-fixtures';
 import path from 'path';
 import fs from 'fs-extra';
 import generatePagesStage, { StageInput } from './index';
@@ -6,9 +6,11 @@ import generatePagesStage, { StageInput } from './index';
 describe('Generate pages build stage integration', () => {
   let pagesPath: string;
   let wrappersPath: string;
+  let defaultPagesPath: string;
 
   beforeEach(async () => {
     const cwd = await createTempDir();
+    defaultPagesPath = await copyFixtureIntoTempDir(__dirname, 'default-pages');
     pagesPath = path.join(cwd, 'pages');
     wrappersPath = path.join(cwd, 'wrappers');
   });
@@ -18,6 +20,7 @@ describe('Generate pages build stage integration', () => {
     const input: StageInput = {
       pagesPath,
       wrappersPath,
+      defaultPagesPath,
       pages: {
         packageDocPages: [
           {
@@ -79,7 +82,7 @@ describe('Generate pages build stage integration', () => {
           },
         ],
       },
-      packageRoot: path.resolve(__dirname, '..', '..', '..', '..'),
+      packageRoot: path.resolve(__dirname, '..', '..'),
       sitemap: { packages: [], docs: { docs: [] } },
       readmePageData: [],
       packagesMeta: [],
@@ -123,5 +126,8 @@ describe('Generate pages build stage integration', () => {
       path.join(pagesPath, 'package-home-pages'),
     );
     expect(packageHomePages).toEqual(['home1.js']);
+
+    const rootPages = await fs.readdir(pagesPath);
+    expect(rootPages).toContain('default-page.js');
   });
 });

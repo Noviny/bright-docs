@@ -11,7 +11,9 @@
   ],
   "author": "Aparna Raj",
   "license": "MIT",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "peerDependencies": {
     "react": "16.10.2",
     "react-dom": "^16.8.4"

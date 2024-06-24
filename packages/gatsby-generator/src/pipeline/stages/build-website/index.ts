@@ -1,4 +1,4 @@
-import createStage from '../make-pipeline-stage';
+import { makePipelineStage } from '@brisk-docs/pipeline-stages';
 // @ts-ignore
 import createNextServer from '../run-website/next-server';
 
@@ -10,7 +10,7 @@ interface StageInput {
   nextOptions?: string[];
 }
 
-export default createStage(
+export default makePipelineStage(
   'build-website',
   async (input: StageInput): Promise<void> => {
     return createNextServer(input);
