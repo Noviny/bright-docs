@@ -40,7 +40,7 @@
     "@emotion/core": "^10.0.9",
     "@emotion/styled": "^10.0.9",
     "@emotion/styled-base": "^10.0.10",
-    "prismjs": "^1.15.0",
+    "prismjs": "^1.27.0",
     "raw-loader": "^1.0.0",
     "react-addons-text-content": "^0.0.4",
     "react-markdown": "^2.5.0"

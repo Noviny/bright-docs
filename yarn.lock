@@ -15048,7 +15048,12 @@ pretty-proptypes@^0.6.6:
     kind2string "^0.6.2"
     react-markings "^1.2.0"
 
-prismjs@^1.15.0, prismjs@^1.8.4, prismjs@~1.15.0:
+prismjs@^1.27.0, prismjs@^1.8.4:
+  version "1.27.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.27.0.tgz#bb6ee3138a0b438a3653dd4d6ce0cc6510a45057"
+  integrity sha512-t13BGPUlFDR7wRB5kQDG4jjl7XeuH6jbJGt11JHPL96qwsEHNX2+68tFXqc1/k+/jALsbSWJKUOT/hcYAZ5LkA==
+
+prismjs@~1.15.0:
   version "1.15.0"
   resolved "https://packages.atlassian.com/api/npm/npm-remote/prismjs/-/prismjs-1.15.0.tgz#8801d332e472091ba8def94976c8877ad60398d9"
   integrity sha512-Lf2JrFYx8FanHrjoV5oL8YHCclLQgbJcVZR+gikGGMqz6ub5QVWDTM6YIwm3BuPxM/LOV+rKns3LssXNLIf+DA==

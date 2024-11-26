@@ -103,7 +103,7 @@
     "outdent": "^0.7.0",
     "pkg-dir": "^4.2.0",
     "pretty-proptypes": "^0.6.6",
-    "prismjs": "^1.15.0",
+    "prismjs": "^1.27.0",
     "prop-types": "^15.6.2",
     "raw-loader": "^1.0.0",
     "react": "16.10.2",
